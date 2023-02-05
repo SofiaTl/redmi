@@ -1,0 +1,786 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    list-style: 1.6;
+    color: #000000;
+}
+
+
+/*отступ текста от края*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*сайт*/
+
+.intro {
+    width: 100%;
+    height: 71.5vh;
+    background-color: #EEEEEE;
+}
+
+
+/*текст h1*/
+
+.intro__title {
+    position: absolute;
+    width: 538px;
+    height: 140px;
+    left: 140px;
+    top: 192px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+
+/*текст h2*/
+
+.intro__title2 {
+    position: absolute;
+    width: 400px;
+    height: 49px;
+    left: 140px;
+    top: 350px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #283136;
+}
+
+
+/*поисковые системы в шапке*/
+
+.header {
+    padding-top: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 45px;
+}
+
+
+/*логотип*/
+
+.header__logo {
+    color: #000000;
+    position: absolute;
+    width: 159.87px;
+    height: 65.02px;
+    left: 140px;
+    top: 48.98px;
+    font-size: 60px;
+    font-family: 'Charm', cursive;
+}
+
+
+/*оформление поисковых систем*/
+
+.nav {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 45px;
+    position: absolute;
+    width: 437px;
+    height: 30px;
+    left: 485px;
+    top: 75px;
+}
+
+.nav__link {
+    display: inline-block;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 26px;
+    left: 0;
+    z-index: 1;
+    background-color: #FB565A;
+    transition: opacity .3s linear;
+    opacity: 0;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+
+/*тележка*/
+
+.shop {
+    position: absolute;
+    left: 80%;
+    right: 18%;
+    top: 3.31%;
+    bottom: 96.24%;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 45px;
+    position: absolute;
+    width: 437px;
+    height: 30px;
+    top: 75px;
+}
+
+.shop__ickon {
+    display: inline-block;
+    color: #A6A6A6;
+    position: relative;
+    text-decoration: none;
+    padding: 0px;
+}
+
+
+/*корзина текст*/
+
+.trash {
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    left: 1280px;
+    top: 75px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.trash__link {
+    display: inline-block;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    transition: color .3s linear;
+}
+
+.trash__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 26px;
+    left: 0;
+    z-index: 1;
+    background-color: #FB565A;
+    transition: opacity .3s linear;
+    opacity: 0;
+}
+
+.trash__link:hover:after {
+    opacity: 1;
+}
+
+
+/*картинка телефонов*/
+
+.img {
+    position: absolute;
+    width: 760px;
+    height: 431px;
+    left: 537px;
+    top: 114px;
+}
+
+
+/*кнопка1*/
+
+.btn {
+    position: absolute;
+    width: 132px;
+    height: 18px;
+    left: 140px;
+    top: 432px;
+    background-color: #FB565A;
+    border-radius: 3px;
+    padding: 15px 54px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*картинки блога*/
+
+.blog {
+    display: flex;
+}
+
+.blog__item {
+    width: 30%;
+}
+
+.blog__header {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.blog__photo1 {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 146px;
+    left: 140px;
+    top: 80px;
+}
+
+
+/*БЛОГ красный*/
+
+
+/*подблог*/
+
+.blog__text1 {
+    position: absolute;
+    width: 260px;
+    height: 48px;
+    left: 140px;
+    top: 842px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #283136;
+}
+
+.blog__title {
+    position: absolute;
+    width: 138px;
+    height: 30px;
+    left: 140px;
+    top: 796px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.blog__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog__title a:hover {
+    text-decoration: underline;
+}
+
+
+/*кнопка1 красная*/
+
+
+/*???почему кнопка работает не плавно???*/
+
+.btn1 {
+    position: absolute;
+    height: 20px;
+    left: 140px;
+    top: 922px;
+    background-color: #FB565A;
+    border-radius: 3px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
+    transition-duration: 0.5s;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #FB565A;
+}
+
+
+/*БЛОГ ЗЕЛЕНЫЙ*/
+
+.blog__title2 {
+    position: absolute;
+    width: 169px;
+    height: 30px;
+    left: 540px;
+    top: 796px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.blog__title2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog__title2 a:hover {
+    text-decoration: underline;
+}
+
+.blog__photo2 {
+    position: absolute;
+    width: 300px;
+    height: 146px;
+    left: 540px;
+    top: 81px;
+}
+
+.blog__text2 {
+    position: absolute;
+    width: 260px;
+    height: 48px;
+    left: 540px;
+    top: 842px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    display: flex;
+    align-items: center;
+    color: #283136;
+}
+
+
+/*кнока2 зеленая*/
+
+
+/*не работает плавно кнопка*/
+
+.btn2 {
+    position: absolute;
+    height: 20px;
+    left: 540px;
+    top: 922px;
+    background-color: #00CA74;
+    border-radius: 3px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
+    transition-duration: 0.5s;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #00CA74;
+}
+
+
+/*БЛОГ желтый*/
+
+.blog__photo3 {
+    position: absolute;
+    width: 300px;
+    height: 146px;
+    left: 940px;
+    top: 80px;
+}
+
+.blog__title3 {
+    position: absolute;
+    width: 173px;
+    height: 30px;
+    left: 940px;
+    top: 796px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.blog__title3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog__title3 a:hover {
+    text-decoration: underline;
+}
+
+.blog__text3 {
+    position: absolute;
+    width: 260px;
+    height: 49px;
+    left: 940px;
+    top: 842px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #283136;
+}
+
+
+/*кнопка3 желтая*/
+
+.btn3 {
+    position: absolute;
+    height: 20px;
+    left: 940px;
+    top: 922px;
+    background-color: #EFC849;
+    border-radius: 3px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition-duration: .5s;
+    /* Safari */
+    transition-duration: .5s;
+}
+
+.btn3:hover {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #EFC849;
+}
+
+
+/*полоска1*/
+
+.divide1 {
+    position: absolute;
+    width: 1158px;
+    height: 2px;
+    left: 140px;
+    top: 1052px;
+    background: #EEEEEE;
+}
+
+
+/*текст после полоски1*/
+
+.txt1 {
+    position: absolute;
+    left: 9.72%;
+    right: 45.07%;
+    top: 1170px;
+    bottom: 50.81%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.txt2 {
+    position: absolute;
+    left: 5px;
+    right: 45.42%;
+    top: 115px;
+    bottom: 47.54%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: #283136;
+}
+
+.txt3 {
+    position: absolute;
+    height: 24px;
+    left: 3px;
+    right: 69.03%;
+    top: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
+    color: #283136;
+}
+
+.txt4 {
+    position: absolute;
+    text-transform: none;
+    left: 40px;
+    right: 60.35%;
+    top: 50px;
+    bottom: 39.18%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    color: #283136;
+}
+
+
+/*боковая линия к текстам*/
+
+.line1 {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    left: -40px;
+    top: 12px;
+    background: #FB565A;
+}
+
+.line2 {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    left: -1px;
+    top: 45px;
+    background: #FB565A;
+}
+
+.line3 {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    left: 0px;
+    top: 50px;
+    background: #FB565A;
+}
+
+
+/*изображение nёrds с кружочками*/
+
+.blog__photo4 {
+    position: absolute;
+    width: 360px;
+    height: 208px;
+    left: 940px;
+    top: 550px;
+}
+
+
+/*текст под картинкой с кружочками*/
+
+.txt5 {
+    position: absolute;
+    left: 770px;
+    right: 9.72%;
+    top: -80px;
+    bottom: 44.99%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+/*числа в процентах*/
+
+.number {
+    position: absolute;
+    height: 64px;
+    left: 795px;
+    right: 29.31%;
+    top: -110px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 64px;
+    color: #000000;
+}
+
+
+/*текст после чисел*/
+
+.txt6 {
+    position: absolute;
+    left: 760px;
+    right: 26.46%;
+    top: 100px;
+    bottom: 39.26%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #283136;
+}
+
+.txt7 {
+    position: absolute;
+    left: 870px;
+    right: 26.46%;
+    top: 100px;
+    bottom: 39.26%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #283136;
+}
+
+.txt8 {
+    position: absolute;
+    left: 980px;
+    right: 26.46%;
+    top: 100px;
+    bottom: 39.26%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #283136;
+}
+
+
+/*полоска2*/
+
+.divide2 {
+    position: absolute;
+    width: 1158px;
+    height: 2px;
+    left: 10px;
+    top: 555px;
+    background: #EEEEEE;
+}
+
+
+/*изображение html*/
+
+.blog__photo5 {
+    position: absolute;
+    width: 199px;
+    height: 67.82px;
+    left: 200px;
+    top: 1150px;
+    opacity: 0.8;
+}
+
+
+/*полоска между изображениями1*/
+
+.divide3 {
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    left: 300px;
+    top: 50px;
+    background: #EEEEEE;
+}
+
+
+/*изображение borodinski*/
+
+.blog__photo6 {
+    position: absolute;
+    width: 209px;
+    height: 90px;
+    left: 495px;
+    top: 1150px;
+}
+
+
+/*полоска между изображениями2*/
+
+.divide4 {
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    left: 300px;
+    top: 3px;
+    background: #EEEEEE;
+}
